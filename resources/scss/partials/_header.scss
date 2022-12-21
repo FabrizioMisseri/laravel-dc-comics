@@ -1,0 +1,40 @@
+header {
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: white;
+
+    nav {
+        width: 100%;
+
+        li {
+            line-height: 70px;
+        }
+
+        a {
+            color: inherit;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .my_searchbar {
+            display: inline-block;
+            max-width: 125px;
+            font-size: 1rem;
+            border: 1px solid lightgray;
+            max-height: 30px;
+        }
+
+        img {
+            max-height: 50px;
+        }
+    }
+
+}

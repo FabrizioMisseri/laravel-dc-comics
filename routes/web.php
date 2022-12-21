@@ -29,7 +29,7 @@ Route::get('/', function () {
         'shop'
     ];
 
-    return view('home', compact('navbarArray'));
+    return view('comics.index', compact('navbarArray'));
 })->name('home');
 
 Route::resource('comics', ComicController::class);

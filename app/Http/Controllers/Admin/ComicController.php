@@ -60,7 +60,21 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+        $navbarArray = [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ];
+        $comic = Comic::findOrFail($id);
+
+        return view('comics.show', compact('comic', 'navbarArray'));
     }
 
     /**

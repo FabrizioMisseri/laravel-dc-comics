@@ -14,22 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
 
-    $navbarArray = [
-        'characters',
-        'comics',
-        'movies',
-        'tv',
-        'games',
-        'collectibles',
-        'videos',
-        'fans',
-        'news',
-        'shop'
-    ];
-
-    return view('comics.index', compact('navbarArray'));
-})->name('home');
 
 Route::resource('comics', ComicController::class);

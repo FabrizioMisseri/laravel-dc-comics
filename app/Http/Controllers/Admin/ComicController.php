@@ -38,7 +38,19 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $navbarArray = [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ];
+        return view('comics.create', compact('navbarArray'));
     }
 
     /**

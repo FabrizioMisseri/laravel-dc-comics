@@ -8,6 +8,9 @@
     </div>
     <div>
         <div class="container mt-4">
+            <div class="text-end mb-4">
+                <a href="{{ route('comics.create') }}" class="btn btn-primary">Crea un nuovo comic</a>
+            </div>
             <table class="table table-striped">
                 <thead>
                     <tr>

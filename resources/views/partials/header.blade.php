@@ -10,7 +10,10 @@
             <ul class="d-flex justify-content-between align-items-center">
 
                 <li>
-                    <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
+                    <a href="{{ route('comics.index') }}">
+
+                        <img src="{{ Vite::asset('resources/images/dc-logo.png') }}" alt="">
+                    </a>
                 </li>
 
                 @foreach ($navbarArray as $link)

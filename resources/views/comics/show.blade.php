@@ -5,11 +5,7 @@
         <div class="container">
             <h2>Comic {{ $comic->id }}</h2>
             <div class="mt-4">
-                @if (!empty($comic->thumb))
-                    <img class="w-25" src="{{ $comic->thumb }}" alt="">
-                @else
-                    <p>Nessuna immagine presente</p>
-                @endif
+                <img class="w-25" src="{{ $comic->thumb }}" alt="">
             </div>
             <dl>
                 <dt>Title</dt>

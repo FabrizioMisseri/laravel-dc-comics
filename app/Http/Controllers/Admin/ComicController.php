@@ -15,20 +15,9 @@ class ComicController extends Controller
      */
     public function index()
     {
-        $navbarArray = [
-            'characters',
-            'comics',
-            'movies',
-            'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
-            'news',
-            'shop'
-        ];
+
         $comics = Comic::all();
-        return view('comics.index', compact('comics', 'navbarArray'));
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -38,19 +27,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        $navbarArray = [
-            'characters',
-            'comics',
-            'movies',
-            'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
-            'news',
-            'shop'
-        ];
-        return view('comics.create', compact('navbarArray'));
+
+        return view('comics.create');
     }
 
     /**
@@ -72,21 +50,10 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        $navbarArray = [
-            'characters',
-            'comics',
-            'movies',
-            'tv',
-            'games',
-            'collectibles',
-            'videos',
-            'fans',
-            'news',
-            'shop'
-        ];
+
         $comic = Comic::findOrFail($id);
 
-        return view('comics.show', compact('comic', 'navbarArray'));
+        return view('comics.show', compact('comic'));
     }
 
     /**

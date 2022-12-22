@@ -2,6 +2,11 @@
     <div class="container">
 
         <nav>
+
+            <?php
+            $navbarArray = ['characters', 'comics', 'movies', 'tv', 'games', 'collectibles', 'videos', 'fans', 'news', 'shop'];
+            ?>
+
             <ul class="d-flex justify-content-between align-items-center">
 
                 <li>
